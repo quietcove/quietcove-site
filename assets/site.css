@@ -1,0 +1,42 @@
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#F6F6F3;color:#101418}
+img{max-width:100%}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid #5A6FD6;outline-offset:3px;border-radius:6px}
+body.mirae{background:#F6F6F3}
+body.chuckboss{background:#F3F5FA}
+@media (max-width: 900px){.hero-art{display:none !important}}
+@media (max-width: 720px){
+  .phones-mid > div:not(:nth-child(2)){display:none !important}
+  .phones-first > div:nth-child(2){display:none !important}
+}
+/* 공지사항·문서 */
+.page{font-family:'IBM Plex Sans KR','Apple SD Gothic Neo',sans-serif;font-size:16px;line-height:1.75;word-break:keep-all;overflow-wrap:break-word}
+.wrap{max-width:1200px;margin:0 auto;padding-left:clamp(24px,6vw,88px);padding-right:clamp(24px,6vw,88px)}
+.narrow{max-width:880px}
+.doc-head{padding-block:clamp(64px,8vw,112px) 32px}
+.eyebrow{margin:0;font-size:13px;font-weight:600;letter-spacing:.14em;color:#4A545C}
+.doc-head h1{margin:14px 0 0;font-size:clamp(30px,4.4vw,48px);line-height:1.25;font-weight:700;letter-spacing:-.03em;text-wrap:balance}
+.meta{margin:14px 0 0;color:#4A545C;font-size:15px}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid #101418}
+.list li{border-bottom:1px solid #E2E2DB}
+.list a{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 24px;padding:22px 0;text-decoration:none}
+.list .d{flex:none;width:104px;font-size:14px;color:#4A545C;font-variant-numeric:tabular-nums}
+.list .t{flex:1 1 320px;min-width:0;font-size:18px;font-weight:600}
+.list .c{font-size:13px;color:#4A545C}
+.list .empty{padding:22px 0;color:#4A545C}
+.prose{padding-bottom:clamp(80px,10vw,140px);font-size:17px}
+.prose h2{font-size:22px;margin:40px 0 10px;line-height:1.4}
+.prose h3{font-size:19px;margin:28px 0 8px}
+.prose p,.prose ul,.prose ol{margin:0 0 14px}
+.prose table{border-collapse:collapse;width:100%;margin:0 0 18px;font-size:15px;display:block;overflow-x:auto}
+.prose th,.prose td{border:1px solid #E2E2DB;padding:8px 12px;text-align:left}
+.prose a{color:#2B44B8}
+.back{display:inline-flex;margin-top:40px;font-size:15px;color:#4A545C}
+.notice-box{background:#FFFFFF;border:1px solid #E2E2DB;border-radius:16px;padding:16px 20px;margin:0 0 28px}
+.notice-box p{margin:4px 0 0;color:#4A545C}
+.doc article{display:grid;grid-template-columns:36px 1fr;gap:4px 12px;padding-block:18px;border-top:1px solid #E2E2DB}
+.doc article>div{min-width:0}
+.doc .num{color:#403A66;font-weight:700;font-size:18px}
+.doc article h2{margin:0 0 6px;font-size:19px}

@@ -1,0 +1,14 @@
+---
+layout: default
+---
+    <div class="wrap narrow">
+      <div class="doc-head">
+        <p class="eyebrow">NOTICE{% if page.category %} · {{ page.category }}{% endif %}</p>
+        <h1>{{ page.title }}</h1>
+        <p class="meta">{{ page.date | date: "%Y년 %-m월 %-d일" }} · 주식회사 콰이어트코브</p>
+      </div>
+      <div class="prose">
+{{ content }}
+        <a class="back" href="/notice/">← 공지사항 목록</a>
+      </div>
+    </div>

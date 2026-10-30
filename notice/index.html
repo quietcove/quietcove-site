@@ -1,0 +1,18 @@
+---
+layout: default
+title: 공지사항
+description: QUIETCOVE(주식회사 콰이어트코브)의 공지와 회사 소식이에요.
+---
+    <div class="wrap narrow">
+      <div class="doc-head">
+        <p class="eyebrow">NOTICE</p>
+        <h1>공지사항</h1>
+        <p class="meta">주식회사 콰이어트코브의 공지와 회사 소식을 알려드려요.</p>
+      </div>
+      <ul class="list" style="margin-bottom: clamp(80px, 10vw, 140px)">
+        {% for post in site.posts %}
+        <li><a href="{{ post.url }}"><span class="d">{{ post.date | date: "%Y.%m.%d" }}</span><span class="t">{{ post.title }}</span>{% if post.category %}<span class="c">{{ post.category }}</span>{% endif %}</a></li>
+        {% endfor %}
+        {% if site.posts.size == 0 %}<li class="empty">아직 등록된 공지가 없어요.</li>{% endif %}
+      </ul>
+    </div>
